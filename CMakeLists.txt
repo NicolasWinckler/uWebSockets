@@ -26,7 +26,7 @@ if(NOT CMAKE_INSTALL_PREFIX)
 endif(NOT CMAKE_INSTALL_PREFIX)
 target_link_libraries (uWS LINK_PUBLIC pthread)
 install (TARGETS uWS DESTINATION lib64)
-install (FILES src/EventSystem.h src/Server.h src/WebSocket.h src/uWS.h DESTINATION include/uWS)
+install (FILES src/Network.h src/EventSystem.h src/Server.h src/WebSocket.h src/uWS.h DESTINATION include/uWS)
 endif (UNIX)
 
 add_subdirectory(examples)
